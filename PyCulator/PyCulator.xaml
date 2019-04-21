@@ -62,8 +62,8 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Button x:Name="Dot" Content="." Grid.Row="6" FontSize="20" Grid.Column="2" Style="{Binding Style, ElementName=Plus_Minus}" Tag="dot_tag"/>
-        <Button x:Name="Equ" Content="=" Grid.Row="6" FontSize="20" Grid.Column="3" Tag="equ_tag">
+        <Button x:Name="Dot" Content="." Grid.Row="6" FontSize="20" Grid.Column="2" Style="{Binding Style, ElementName=Plus_Minus}" Tag="dot_tag" Click="Dot_Click"/>
+        <Button x:Name="Equ" Content="=" Grid.Row="6" FontSize="20" Grid.Column="3" Tag="equ_tag" Click="Equ_Click">
             <Button.Style>
                 <Style TargetType="{x:Type Button}">
                     <Setter Property="Background" Value="#FFF0F0F0"/>
@@ -84,10 +84,10 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Button x:Name="Plus" Content="+" Grid.Row="5" FontSize="20" Grid.Column="3" Style="{Binding Style, ElementName=Equ}" Tag="plus_tag"/>
-        <Button x:Name="Minus" Content="-" Grid.Row="4" FontSize="20" Grid.Column="3" Style="{Binding Style, ElementName=Equ}" Tag="minus_tag"/>
-        <Button x:Name="Times" Content="X" Grid.Row="3" FontSize="20" Grid.Column="3" Style="{Binding Style, ElementName=Equ}" Tag="times_tag"/>
-        <Button x:Name="Diva" Content="/" Grid.Row="2" FontSize="20" Grid.Column="3" Style="{Binding Style, ElementName=Equ}" Tag="diva_tag"/>
+        <Button x:Name="Plus" Content="+" Grid.Row="5" FontSize="20" Grid.Column="3" Style="{Binding Style, ElementName=Equ}" Tag="plus_tag" Click="Basic_Operation_Click"/>
+        <Button x:Name="Minus" Content="-" Grid.Row="4" FontSize="20" Grid.Column="3" Style="{Binding Style, ElementName=Equ}" Tag="minus_tag" Click="Basic_Operation_Click"/>
+        <Button x:Name="Times" Content="X" Grid.Row="3" FontSize="20" Grid.Column="3" Style="{Binding Style, ElementName=Equ}" Tag="times_tag" Click="Basic_Operation_Click"/>
+        <Button x:Name="Diva" Content="/" Grid.Row="2" FontSize="20" Grid.Column="3" Style="{Binding Style, ElementName=Equ}" Tag="diva_tag" Click="Diva_Click"/>
         <Button x:Name="Del" Content="Del" Grid.Row="2" FontSize="20" Grid.Column="2" Style="{Binding Style, ElementName=Plus_Minus}" Tag="del_tag" Click="Del_Click"/>
         <Button x:Name="C" Content="C" Grid.Row="2" FontSize="20" Grid.Column="1" Style="{Binding Style, ElementName=Plus_Minus}" Tag="c_tag" Click="Clear_Click"/>
         <Button x:Name="CE" Content="CE" Grid.Row="2" FontSize="20" Grid.Column="0" Style="{Binding Style, ElementName=Plus_Minus}" Tag="ce_tag" Click="Clear_Click"/>
